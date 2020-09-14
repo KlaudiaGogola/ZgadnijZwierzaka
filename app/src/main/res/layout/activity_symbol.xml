@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_done"
+    tools:context=".SymbolActivity">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" >
+
+            <LinearLayout
+                android:id="@+id/topLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/buttonBack"
+                    android:background="@drawable/ic_back"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:layout_height="15dp"
+                    />
+
+                <ProgressBar
+                    android:layout_weight="3"
+                    android:id="@+id/progressBarCountQuestion"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:max="20"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleY="3"
+                    android:progressBackgroundTint="#DDF9DA"
+                    android:progressTint="#29CA17"
+                    />
+
+                <TextView
+                    android:id="@+id/textCountQuestion"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="1/15"
+                    android:textColor="#202C4C"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/titleQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Jakie zwierzątko \nsymbolizuje?"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textColor="#202C4C"/>
+
+                <ImageView
+                    android:id="@+id/imageQuestion"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/titleQuestion"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp" />
+
+                <TextView
+                    android:id="@+id/textScored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageQuestion"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/buttonback">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonA"
+                    android:text="AnswerA"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/buttona"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp" />
+
+                <Button
+                    android:id="@+id/buttonC"
+                    android:text="AnswerC"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/buttonc"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonB"
+                    android:text="AnswerB"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/buttonb"
+                    android:layout_width="140dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:text="AnswerD"
+                    android:id="@+id/buttonD"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/buttond"
+                    android:layout_width="140dp"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>

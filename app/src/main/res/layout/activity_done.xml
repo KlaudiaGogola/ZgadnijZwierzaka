@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_done"
+    tools:context=".SymbolDone">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    <TextView
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textEnd"
+        android:textColor="#202C4C"
+        android:text="Gratulacje!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/textEnd"
+        android:id="@+id/textResultScore"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColor="#31B2FF"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+    
+    <Button
+        android:id="@+id/buttonPlayAgain"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textResultScore"
+        android:background="@drawable/buttonagain"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:text="Zagraj jeszcze raz!"
+        android:textAllCaps="false"
+        android:textColor="#31B2FF"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/buttonChangeGame"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonPlayAgain"
+        android:background="@drawable/buttonchange"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:text="Zmień grę"
+        android:textColor="#87ABC0"
+        android:textSize="20sp"
+        />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_menu"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_marginStart="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="32sp"
+        android:textColor="#FFA90F"
+        android:text="Cześć,"
+        android:textAlignment="center"
+        />
+
+
+    <TextView
+        android:id="@+id/nameReceivedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/helloText"
+        android:textSize="48sp"
+        android:textColor="#202C4C"
+        android:textAlignment="center"
+        />
+
+
+    <Button
+        android:id="@+id/buttonMenuFirst"
+        android:background="@drawable/button_mis"
+        android:layout_width="290dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/nameReceivedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/buttonMenuSecond"
+        android:background="@drawable/button_lis"
+        android:layout_width="290dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buttonMenuFirst"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/buttonMenuThird"
+        android:background="@drawable/button_lama"
+        android:layout_width="290dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buttonMenuSecond"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/buttonMenuFourth"
+        android:background="@drawable/button_kang"
+        android:layout_width="290dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buttonMenuThird"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+        <Button
+            android:id="@+id/buttonMenuFifth"
+            android:background="@drawable/button_deer"
+            android:layout_width="290dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/buttonMenuFourth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="30dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
