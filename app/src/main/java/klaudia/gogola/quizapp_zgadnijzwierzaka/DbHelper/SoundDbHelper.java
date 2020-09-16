@@ -15,7 +15,7 @@ import klaudia.gogola.quizapp_zgadnijzwierzaka.Model.SoundQuestion;
 public class SoundDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "SoundDataBase.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
     private SQLiteDatabase db;
 
     public SoundDbHelper(Context context) {
@@ -73,6 +73,10 @@ public class SoundDbHelper extends SQLiteOpenHelper {
         addQuestion(question12);
         SoundQuestion question13 = new SoundQuestion("kroko", "Krokodyl", "Kangur", "Niedźwiedź", "Hipopotam","kroko", "Krokodyl", "krokoblack");
         addQuestion(question13);
+        SoundQuestion question14 = new SoundQuestion("kaczka", "Pingwin", "Kaczka", "Lew", "Panda","kaczka", "Kaczka", "kaczkablack");
+        addQuestion(question14);
+        SoundQuestion question15 = new SoundQuestion("snake", "Wąż", "Kangur", "Niedźwiedź", "Kot","snake", "Wąż", "snakeblack");
+        addQuestion(question15);
 
 
     }

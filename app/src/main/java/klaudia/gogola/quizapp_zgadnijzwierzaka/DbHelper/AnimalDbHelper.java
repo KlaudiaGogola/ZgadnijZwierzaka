@@ -16,7 +16,7 @@ import klaudia.gogola.quizapp_zgadnijzwierzaka.Model.Question;
 public class AnimalDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "AnimalDataBase.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 4;
     private SQLiteDatabase db;
 
 
@@ -91,6 +91,10 @@ public class AnimalDbHelper extends SQLiteOpenHelper {
         addQuestion(question20);
         Question question21 = new Question("lama", "Alpaka", "Delfin", "Lew", "Krokodyl", "Alpaka");
         addQuestion(question21);
+        Question question22 = new Question("kaczka", "Kaczka", "Sarna", "Pingwin", "Niedźwiedź", "Kaczka");
+        addQuestion(question22);
+        Question question23 = new Question("snake", "Alpaka", "Wąż", "Kangur", "Koala", "Wąż");
+        addQuestion(question23);
 
     }
 
@@ -115,7 +119,7 @@ public class AnimalDbHelper extends SQLiteOpenHelper {
         Cursor c = db.rawQuery("SELECT * FROM " + QuestionsTable.TABLE_NAME, null);
         if (c.moveToFirst()) {
             do {
-                Question question = new Question();
+                Question question = new Question("zyrafa", "żyrafa");
                 question.setQuestion(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_QUESTION)));
                 question.setOption1(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION1)));
                 question.setOption2(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));

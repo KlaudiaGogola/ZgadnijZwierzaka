@@ -5,4 +5,9 @@
     <color name="colorAccent">#FFFFFF</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBar">#CBCFD1</color>
+    <color name="colorLetters">#6E5747</color>
+    <color name="progressBarBackground">#DDF9DA</color>
+    <color name="progressBar">#29CA17</color>
+
+
 </resources>

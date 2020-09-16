@@ -1,28 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LettersActivity"
+    android:orientation="vertical"
     android:background="@drawable/back_done">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
 
-    <ImageButton
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/buttonBack"
-        android:background="@drawable/ic_back"
-        android:layout_gravity="center"
-        android:layout_width="40dp"
-        android:layout_height="15dp"
-        />
 
-    <TextView
-        android:textSize="40dp"
-        android:text="W trakcie wdrażania"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
 
-</RelativeLayout>
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:background="@drawable/ic_back"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                />
+
+            <ProgressBar
+                android:layout_weight="3"
+                android:id="@+id/progressBarCountQuestion"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:max="20"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:progressDrawable="@drawable/progressbar_custom"
+
+                />
+
+            <TextView
+                android:id="@+id/textCountQuestion"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="1/20"
+                android:textAlignment="center"
+                android:textColor="#202C4C"
+                android:textSize="20sp"
+                android:paddingBottom="1dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Co to za zwierzątko?"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textColor="#202C4C"/>
+
+            <ImageView
+                android:id="@+id/imageQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/titleQuestion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/textScored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageQuestion"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <LinearLayout
+            android:id="@+id/linearGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonback"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gridViewAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:columnWidth="40dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:padding="20dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="4dp"
+                />
+
+            <GridView
+                android:id="@+id/gridViewSuggest"
+                android:columnWidth="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:padding="20dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </GridView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <Button
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnSubmit"
+            android:background="@drawable/orangeback"
+            android:textSize="18sp"
+            android:text="Sprawdź odpowiedź"
+            android:textAllCaps="false"
+            android:layout_marginBottom="15dp"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

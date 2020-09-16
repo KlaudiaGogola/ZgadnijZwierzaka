@@ -102,7 +102,7 @@ public class SymbolDbHelper extends SQLiteOpenHelper {
         Cursor c = db.rawQuery("SELECT * FROM " + QuestionsTable.TABLE_NAME, null);
         if (c.moveToFirst()) {
             do {
-                Question question = new Question();
+                Question question = new Question("zyrafa", "żyrafa");
                 question.setQuestion(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_QUESTION)));
                 question.setOption1(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION1)));
                 question.setOption2(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));

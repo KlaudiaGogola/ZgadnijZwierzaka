@@ -41,9 +41,7 @@
                 android:layout_height="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="20dp"
-                android:scaleY="3"
-                android:progressBackgroundTint="#DDF9DA"
-                android:progressTint="#29CA17"
+                android:progressDrawable="@drawable/progressbar_custom"
                 />
 
             <TextView
@@ -55,7 +53,8 @@
                 android:text="1/20"
                 android:textAlignment="center"
                 android:textColor="#202C4C"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingBottom="1dp"/>
 
         </LinearLayout>
 

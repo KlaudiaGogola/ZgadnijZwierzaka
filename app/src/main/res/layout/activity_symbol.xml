@@ -41,21 +41,20 @@
                     android:layout_height="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="20dp"
-                    android:scaleY="3"
-                    android:progressBackgroundTint="#DDF9DA"
-                    android:progressTint="#29CA17"
+                    android:progressDrawable="@drawable/progressbar_custom"
                     />
 
                 <TextView
                     android:id="@+id/textCountQuestion"
-                    android:layout_width="70dp"
+                    android:layout_width="85dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:text="1/15"
                     android:textColor="#202C4C"
                     android:textSize="20sp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:paddingBottom="1dp"/>
 
             </LinearLayout>
 

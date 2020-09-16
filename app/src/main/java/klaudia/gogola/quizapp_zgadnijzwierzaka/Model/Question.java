@@ -11,6 +11,11 @@ public class Question {
     private String option4;
     private String answerNr;
 
+    public Question(String question, String answerNr){
+        this.question = question;
+        this.answerNr = answerNr;
+    }
+
     public Question(String question, String option1, String option2, String option3, String option4, String answerNr) {
         this.question = question;
         this.option1 = option1;
