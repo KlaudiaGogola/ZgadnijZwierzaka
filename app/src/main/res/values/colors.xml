@@ -8,6 +8,7 @@
     <color name="colorLetters">#6E5747</color>
     <color name="progressBarBackground">#DDF9DA</color>
     <color name="progressBar">#29CA17</color>
+    <color name="colorblack">#000000</color>
 
 
 </resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_done"
+    tools:context=".CardAnimalActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:background="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                />
+
+            <TextView
+                android:id="@+id/textName"
+                android:textColor="#202C4C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="Nazwa"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_margin="20dp"
+                android:id="@+id/imageNew"
+                android:layout_centerInParent="true"
+                android:textSize="40sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/buttonback"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/text"
+                android:textColor="@color/colorblack"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:text="Gatunek: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:text="Środowisko: "
+                android:layout_below="@id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:text="Zagrożenie:"
+                android:layout_below="@id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text4"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:text="Występowanie: "
+                android:layout_below="@id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:text="Środowisko: "
+                android:layout_below="@id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:text="Występowanie: "
+                android:layout_below="@id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:text="Zagrożenie: "
+                android:layout_below="@id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:text="Występowanie: "
+                android:layout_below="@id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_weight="1"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:text="Występowanie: "
+                android:layout_below="@id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -29,6 +29,7 @@ public class MenuActivity extends AppCompatActivity {
         buttonAnimal = (Button) findViewById(R.id.buttonMenuFourth);
         buttonSound = (Button) findViewById(R.id.buttonMenuThird);
         buttonLetters = (Button) findViewById(R.id.buttonMenuFirst);
+        buttonInformation = (Button) findViewById(R.id.buttonMenuFifth) ;
 
         SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = mPreferences.edit();
@@ -70,6 +71,14 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goToLettersActivity = new Intent(getApplicationContext(), LettersActivity.class);
                 startActivity(goToLettersActivity);
+            }
+        });
+
+        buttonInformation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToInfoActivity = new Intent(getApplicationContext(), InformationActivity.class);
+                startActivity(goToInfoActivity);
             }
         });
 
