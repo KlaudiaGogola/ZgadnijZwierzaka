@@ -18,8 +18,8 @@
         android:textSize="40sp"
         android:layout_centerHorizontal="true"
         android:id="@+id/textEnd"
-        android:textColor="#202C4C"
-        android:text="Gratulacje!"
+        android:textColor="@color/fontColor"
+        android:text="@string/gratulation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -28,7 +28,7 @@
         android:id="@+id/textResultScore"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:textColor="#31B2FF"
+        android:textColor="@color/blueFontColor"
         android:textSize="32sp"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
@@ -43,9 +43,9 @@
         android:background="@drawable/buttonagain"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:text="Zagraj jeszcze raz!"
+        android:text="@string/playAgain"
         android:textAllCaps="false"
-        android:textColor="#31B2FF"
+        android:textColor="@color/blueFontColor"
         android:textSize="20sp"
         />
 
@@ -58,8 +58,8 @@
         android:layout_width="260dp"
         android:layout_height="70dp"
         android:textAllCaps="false"
-        android:text="Zmień grę"
-        android:textColor="#87ABC0"
+        android:text="@string/changeGame"
+        android:textColor="@color/greyFontColor"
         android:textSize="20sp"
         />
 

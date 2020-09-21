@@ -54,7 +54,7 @@
                 android:layout_weight="1"
                 android:text="1/20"
                 android:textAlignment="center"
-                android:textColor="#202C4C"
+                android:textColor="@color/fontColor"
                 android:textSize="20sp"
                 android:paddingBottom="1dp"/>
 
@@ -69,10 +69,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="Co to za zwierzątko?"
+                android:text="@string/titleQuestionAnimal"
                 android:textAlignment="center"
                 android:textSize="28sp"
-                android:textColor="#202C4C"/>
+                android:textColor="@color/fontColor"/>
 
             <ImageView
                 android:id="@+id/imageQuestion"
@@ -160,7 +160,7 @@
             android:id="@+id/btnSubmit"
             android:background="@drawable/orangeback"
             android:textSize="18sp"
-            android:text="Sprawdź odpowiedź"
+            android:text="@string/checkAnswer"
             android:textAllCaps="false"
             android:layout_marginBottom="15dp"
             android:layout_width="260dp"

@@ -22,9 +22,9 @@
         android:layout_below="@id/titleImg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="Jak masz na imię?"
+        android:text="@string/nameQuestion"
         android:textAlignment="center"
-        android:textColor="#FFA90F"
+        android:textColor="@color/orangeFontColor"
         android:textSize="32sp" />
 
     <EditText
@@ -33,9 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/nameText"
         android:layout_centerHorizontal="true"
-        android:hint="Podaj imię"
+        android:hint="@string/choseName"
         android:textSize="40dp"
-        android:textColor="#202C4C"
+        android:textColor="@color/fontColor"
         android:textAlignment="center"
 
         />
@@ -49,9 +49,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:background="@drawable/button_go_next"
-        android:text="Przejdź dalej"
+        android:text="@string/goNext"
         android:textAllCaps="false"
-        android:textColor="#4E9842"
+        android:textColor="@color/greenFontColor"
         android:textSize="20sp"
 
         />

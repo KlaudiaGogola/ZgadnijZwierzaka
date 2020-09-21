@@ -126,8 +126,18 @@ public class SoundActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (questionList.get(index).getQuestion().equals(questionList.get(index).getSound())) {
-                    goSound(index);
-                }
+                    goSound(index);}
+                buttonSound.setEnabled(false);
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                            buttonSound.setEnabled(true);
+
+                    }
+                }, 1000);
+
             }
         });
 
@@ -139,6 +149,7 @@ public class SoundActivity extends AppCompatActivity {
             @Override
             public void run() {
                 showNextQuestion(++index);
+
             }
         }, 1000);
     }

@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,12 +20,12 @@ import klaudia.gogola.quizapp_zgadnijzwierzaka.Model.Common;
 import klaudia.gogola.quizapp_zgadnijzwierzaka.Model.Information;
 
 public class CardAnimalActivity extends AppCompatActivity {
-    TextView textName, text, text2, text3, text4, text5, text6, text7, text8, text9;
-    Information animal;
-    ImageButton buttonBack;
-    List<Information> informations;
-    int index =0;
-    ImageView imageAnimals;
+    private TextView textName, text, text2, text3, text4, text5, text6, text7, text8, text9, textImage;
+    private Information animal;
+    private ImageButton buttonBack;
+    private List<Information> informations;
+    private int index =0;
+    private ImageView imageAnimals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +43,7 @@ public class CardAnimalActivity extends AppCompatActivity {
         text7 = (TextView) findViewById(R.id.text7);
         text8 = (TextView) findViewById(R.id.text8);
         text9 = (TextView) findViewById(R.id.text9);
+        textImage = (TextView) findViewById(R.id.textImage);
         imageAnimals = (ImageView) findViewById(R.id.imageNew);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +65,7 @@ public class CardAnimalActivity extends AppCompatActivity {
         text7.setTypeface(fontNunito);
         text8.setTypeface(fontNunito);
         text9.setTypeface(fontNunito);
+        textImage.setTypeface(fontNunito);
 
         Common.questionList = InfoDbHelper.getInstance(this).getInformationbyAnimal(Common.selectedAnimal.getId());
         textName.setText(Common.selectedAnimal.getName());
@@ -87,16 +88,14 @@ public class CardAnimalActivity extends AppCompatActivity {
         Picasso.get().load(animal.getImage()).into(imageAnimals, new Callback() {
             @Override
             public void onSuccess() {
-                Toast.makeText(CardAnimalActivity.this, "Foto", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(Exception e) {
-                Toast.makeText(CardAnimalActivity.this, "Upsss", Toast.LENGTH_SHORT).show();
+                textImage.setText("Zdjęcie: " + animal.getGatunek());
             }
         });
 
-        //  Picasso.get().load("https://zasoby.ekologia.pl/animal/a/29/tygrys-panthera-tigris-5.jpg").into(image);
 
     }
 

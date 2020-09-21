@@ -20,8 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:textSize="32sp"
-        android:textColor="#FFA90F"
-        android:text="Cześć,"
+        android:textColor="@color/orangeFontColor"
+        android:text="@string/hello"
         android:textAlignment="center"
         />
 
@@ -34,7 +34,7 @@
         android:layout_marginTop="10dp"
         android:layout_below="@id/helloText"
         android:textSize="48sp"
-        android:textColor="#202C4C"
+        android:textColor="@color/fontColor"
         android:textAlignment="center"
         />
 

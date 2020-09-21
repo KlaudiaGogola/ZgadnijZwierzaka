@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">QuizApp_ZgadnijZwierzaka</string>
     <string name="name">klaudia.gogola.quizapp_zgadnijzwierzaka.name</string>
+    <string name="titleQuestionAnimal">Co to za zwierzątko?</string>
+    <string name="gratulation">Gratulacje!</string>
+    <string name="playAgain">Zagraj jeszcze raz!</string>
+    <string name="changeGame">Zmień grę</string>
+    <string name="animalList">Lista zwierzaków</string>
+    <string name="checkAnswer">Sprawdź odpowiedź</string>
+    <string name="nameQuestion">Jak masz na imię?</string>
+    <string name="choseName">Podaj imię</string>
+    <string name="goNext">Przejdź dalej</string>
+    <string name="hello">Cześć,</string>
+    <string name="soundInfo">Naciśnij na kształt zwierzaka, aby go usłyszeć</string>
+    <string name="titleQuestionSound">Jakie zwierzątko \nsymbolizuje?</string>
 </resources>

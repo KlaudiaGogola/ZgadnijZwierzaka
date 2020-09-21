@@ -53,7 +53,7 @@
                 android:layout_weight="1"
                 android:text="1/20"
                 android:textAlignment="center"
-                android:textColor="#202C4C"
+                android:textColor="@color/fontColor"
                 android:textSize="20sp"
                 android:paddingBottom="1dp"/>
 
@@ -68,21 +68,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="Co to za zwierzątko?"
+                android:text="@string/titleQuestionAnimal"
                 android:textAlignment="center"
                 android:textSize="28sp"
-                android:textColor="#202C4C"/>
+                android:textColor="@color/fontColor"/>
 
             <TextView
                 android:id="@+id/textInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="Naciśnij na kształt zwierzaka, aby go usłyszeć"
+                android:text="@string/soundInfo"
                 android:layout_below="@id/titleQuestion"
                 android:textAlignment="center"
                 android:textSize="17sp"
-                android:textColor="#8E95AA"/>
+                android:textColor="@color/ligthGreyFontColor"/>
 
 
             <Button

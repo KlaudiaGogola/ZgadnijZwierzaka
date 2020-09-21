@@ -51,7 +51,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:text="1/15"
-                    android:textColor="#202C4C"
+                    android:textColor="@color/fontColor"
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:paddingBottom="1dp"/>
@@ -67,10 +67,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="Jakie zwierzątko \nsymbolizuje?"
+                    android:text="@string/titleQuestionSound"
                     android:textAlignment="center"
                     android:textSize="28sp"
-                    android:textColor="#202C4C"/>
+                    android:textColor="@color/fontColor"/>
 
                 <ImageView
                     android:id="@+id/imageQuestion"
