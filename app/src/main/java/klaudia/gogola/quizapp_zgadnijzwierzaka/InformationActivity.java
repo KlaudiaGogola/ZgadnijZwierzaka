@@ -33,11 +33,8 @@ public class InformationActivity extends AppCompatActivity {
         ViewAdapter adapter = new ViewAdapter(InformationActivity.this, InfoDbHelper.getInstance(this).getAllAnimal());
         recyclerView.setAdapter(adapter);
 
-
         Typeface fontNunito = Typeface.createFromAsset(getAssets(), "fonts/NunitoBold.ttf");
         textList.setTypeface(fontNunito);
-
-
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
