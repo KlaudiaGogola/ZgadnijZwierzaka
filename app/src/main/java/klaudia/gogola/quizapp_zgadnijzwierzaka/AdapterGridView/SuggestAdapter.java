@@ -48,28 +48,28 @@ public class SuggestAdapter extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
-        TextView button;
+        TextView textSuggest;
         if (convertView == null) {
 
             if (suggestSource.get(position).equals("null")) {
-                button = new TextView(context);
-                button.setLayoutParams(new GridView.LayoutParams(85, 85));
-                button.setPadding(8, 8, 8, 8);
-                button.setBackgroundColor(Color.WHITE);
+                textSuggest = new TextView(context);
+                textSuggest.setLayoutParams(new GridView.LayoutParams(85, 85));
+                textSuggest.setPadding(8, 8, 8, 8);
+                textSuggest.setBackgroundColor(Color.WHITE);
 
 
 
             } else {
-                button = new TextView(context);
-                button.setLayoutParams(new GridView.LayoutParams(85, 85));
-                button.setPadding(20, 20, 20, 20);
-                button.setAllCaps(true);
-                button.getResources().getColor(R.color.colorLetters);
-                button.setGravity(Gravity.CENTER);
-                button.setBackgroundResource(R.drawable.letterback);
-                button.setFocusable(true);
-                button.setText(suggestSource.get(position));
-                button.setOnClickListener(new View.OnClickListener() {
+                textSuggest = new TextView(context);
+                textSuggest.setLayoutParams(new GridView.LayoutParams(85, 85));
+                textSuggest.setPadding(20, 20, 20, 20);
+                textSuggest.setAllCaps(true);
+                textSuggest.getResources().getColor(R.color.colorLetters);
+                textSuggest.setGravity(Gravity.CENTER);
+                textSuggest.setBackgroundResource(R.drawable.letterback);
+                textSuggest.setFocusable(true);
+                textSuggest.setText(suggestSource.get(position));
+                textSuggest.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         if(String.valueOf(lettersActivity.answer).contains(suggestSource.get(position)))
@@ -105,8 +105,8 @@ public class SuggestAdapter extends BaseAdapter {
         }
 
         else
-            button = (TextView) convertView;
-        return button;
+            textSuggest = (TextView) convertView;
+        return textSuggest;
     }
 
 

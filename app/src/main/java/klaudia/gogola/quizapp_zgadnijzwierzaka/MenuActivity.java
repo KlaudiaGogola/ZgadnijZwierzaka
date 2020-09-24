@@ -31,10 +31,10 @@ public class MenuActivity extends AppCompatActivity {
         buttonLetters = (Button) findViewById(R.id.buttonMenuFirst);
         buttonInformation = (Button) findViewById(R.id.buttonMenuFifth) ;
 
-        SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = mPreferences.edit();
+        SharedPreferences menuPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        //SharedPreferences.Editor editor = menuPreferences.edit();
 
-        String name = mPreferences.getString(getString(R.string.name), "");
+        String name = menuPreferences.getString(getString(R.string.name), "");
         nameReceivedText.setText(name + "!");
 
         Typeface fontFirst = Typeface.createFromAsset(getAssets(), "fonts/PatrickHandRegular.ttf");

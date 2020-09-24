@@ -2,25 +2,34 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="klaudia.gogola.quizapp_zgadnijzwierzaka">
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/iconcat2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_caticon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CardAnimalActivity"></activity>
-        <activity android:name=".InformationActivity" />
-        <activity android:name=".LettersDone" />
-        <activity android:name=".LettersActivity" />
-        <activity android:name=".SoundDone" />
-        <activity android:name=".AnimalDone" />
-        <activity android:name=".SoundActivity" />
-        <activity android:name=".AnimalActivity" />
-        <activity android:name=".SymbolDone" />
-        <activity android:name=".SymbolActivity" />
+        <activity android:name=".CardAnimalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".InformationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LettersDone"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LettersActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SoundDone"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AnimalDone"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SoundActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AnimalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SymbolDone"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SymbolActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MenuActivity"
             android:screenOrientation="portrait" />

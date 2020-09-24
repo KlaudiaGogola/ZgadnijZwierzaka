@@ -16,8 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private SharedPreferences mPreferences;
-    private SharedPreferences.Editor mEditor;
+    private SharedPreferences loginPreferences;
+    private SharedPreferences.Editor loginEditor;
 
     private TextView nameText;
     private Button nextButton;
@@ -34,13 +34,13 @@ public class LoginActivity extends AppCompatActivity {
         nextButton = (Button) findViewById(R.id.nextButton);
         nameEditText = (EditText) findViewById(R.id.nameEditText);
 
-        mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        mEditor = mPreferences.edit();
-
         nameText.setTypeface(fontFirst);
         nextButton.setTypeface(fontSecond);
         nameEditText.setTypeface(fontSecond);
 
+
+        loginPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        loginEditor = loginPreferences.edit();
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,11 +49,12 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(name.equals("")){
                     name="Nieznajomy";
-                    mEditor.putString(getString(R.string.name), name);
-                    mEditor.commit();
+                    loginEditor.putString(getString(R.string.name), name);
+
+                    loginEditor.commit();
                 } else {
-                    mEditor.putString(getString(R.string.name), name);
-                    mEditor.commit();
+                    loginEditor.putString(getString(R.string.name), name);
+                    loginEditor.commit();
                 }
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(intent);

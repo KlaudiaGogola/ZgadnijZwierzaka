@@ -39,24 +39,24 @@ public class AnswerAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
 
-        TextView button;
+        TextView textAnswer;
         if(convertView == null){
 
-            button = new TextView(context);
-            button.setGravity(Gravity.CENTER);
-            button.setLayoutParams(new GridView.LayoutParams(100,100));
-            button.setPadding(8,8,8,8);
-            button.setText(String.valueOf(answerCharacter[position]));
-            button.getResources().getColor(R.color.colorLetters);
-            button.setBackgroundResource(R.drawable.letterbase);
+            textAnswer = new TextView(context);
+            textAnswer.setGravity(Gravity.CENTER);
+            textAnswer.setLayoutParams(new GridView.LayoutParams(100,100));
+            textAnswer.setPadding(8,8,8,8);
+            textAnswer.setText(String.valueOf(answerCharacter[position]));
+            textAnswer.getResources().getColor(R.color.colorLetters);
+            textAnswer.setBackgroundResource(R.drawable.letterbase);
 
 
-            button.setFocusable(true);
+            textAnswer.setFocusable(true);
 
         }
         else{
-            button=(TextView) convertView;
+            textAnswer=(TextView) convertView;
         }
-        return button;
+        return textAnswer;
     }
 }

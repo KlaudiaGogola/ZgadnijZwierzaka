@@ -22,7 +22,7 @@ import klaudia.gogola.quizapp_zgadnijzwierzaka.Model.SoundQuestion;
 
 public class SoundActivity extends AppCompatActivity {
 
-    private ImageView textViewQuestion;
+    private ImageView VisibleImage;
     private TextView textViewScore;
     private TextView textViewQuestionCount, titleQuestion, textInfo;
 
@@ -47,7 +47,7 @@ public class SoundActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sound);
 
-        textViewQuestion = findViewById(R.id.imageQuestion);
+        VisibleImage = findViewById(R.id.imageQuestion);
         textViewScore = findViewById(R.id.textScored);
         textViewQuestionCount = findViewById(R.id.textCountQuestion);
         titleQuestion = findViewById(R.id.titleQuestion);
@@ -416,21 +416,21 @@ public class SoundActivity extends AppCompatActivity {
 
     private void showImage(int index) {
         int ImageId = this.getResources().getIdentifier(questionList.get(index).getQuestion().toLowerCase(), "drawable", getPackageName());
-        textViewQuestion.setBackgroundResource(ImageId);
+        VisibleImage.setBackgroundResource(ImageId);
 
-        if (textViewQuestion.getVisibility() == View.VISIBLE) {
-            textViewQuestion.postDelayed(new Runnable() {
+        if (VisibleImage.getVisibility() == View.VISIBLE) {
+            VisibleImage.postDelayed(new Runnable() {
                 public void run() {
-                    textViewQuestion.setVisibility(View.INVISIBLE);
+                    VisibleImage.setVisibility(View.INVISIBLE);
                 }
             }, 1000);
 
         } else {
-            textViewQuestion.setVisibility(View.VISIBLE);
-            if (textViewQuestion.getVisibility() == View.VISIBLE) {
-                textViewQuestion.postDelayed(new Runnable() {
+            VisibleImage.setVisibility(View.VISIBLE);
+            if (VisibleImage.getVisibility() == View.VISIBLE) {
+                VisibleImage.postDelayed(new Runnable() {
                     public void run() {
-                        textViewQuestion.setVisibility(View.INVISIBLE);
+                        VisibleImage.setVisibility(View.INVISIBLE);
                     }
                 }, 1000);
 
