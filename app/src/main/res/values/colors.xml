@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#FFFFFF</color>
-    <color name="colorAccent">#FFFFFF</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="colorBar">#CBCFD1</color>
-    <color name="colorLetters">#6E5747</color>
-    <color name="progressBarBackground">#DDF9DA</color>
-    <color name="progressBar">#29CA17</color>
-    <color name="colorblack">#000000</color>
-    <color name="fontColor">#202C4C</color>
-    <color name="blueFontColor">#31B2FF</color>
-    <color name="greyFontColor">#87ABC0</color>
-    <color name="orangeFontColor">#FFA90F</color>
-    <color name="greenFontColor">#4E9842</color>
-    <color name="ligthGreyFontColor">#8E95AA</color>
+<color name="colorPrimary">#6200EE</color>
+<color name="colorPrimaryDark">#FFFFFF</color>
+<color name="colorAccent">#FFFFFF</color>
+<color name="colorWhite">#FFFFFF</color>
+<color name="colorBar">#CBCFD1</color>
+<color name="colorLetters">#6E5747</color>
+<color name="progressBarBackground">#DDF9DA</color>
+<color name="progressBar">#29CA17</color>
+<color name="colorblack">#000000</color>
+<color name="fontColor">#202C4C</color>
+<color name="blueFontColor">#31B2FF</color>
+<color name="greyFontColor">#87ABC0</color>
+<color name="orangeFontColor">#FFA90F</color>
+<color name="greenFontColor">#4E9842</color>
+<color name="ligthGreyFontColor">#8E95AA</color>
 
 </resources>

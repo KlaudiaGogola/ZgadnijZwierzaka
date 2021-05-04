@@ -144,7 +144,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="22dp"
                 android:background="@drawable/buttona"
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="0dp" />
 
             <Button
@@ -159,7 +159,7 @@
                 android:layout_marginRight="22dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/buttonc"
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="0dp" />
 
         </LinearLayout>
@@ -182,7 +182,7 @@
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="40dp"
                 android:background="@drawable/buttonb"
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="0dp" />
 
             <Button
@@ -197,7 +197,7 @@
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="40dp"
                 android:background="@drawable/buttond"
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="0dp" />
 
         </LinearLayout>
